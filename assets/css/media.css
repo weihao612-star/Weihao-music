@@ -1,0 +1,50 @@
+#bands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-top: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.band-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 8px;
+}
+
+.band-item img {
+  width: 100%;
+  aspect-ratio: 3 / 2; /* 600x400 ratio */
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.band-item img:hover {
+  transform: scale(1.03);
+}
+
+/* Caption styling */
+.band-item span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #bands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  #bands {
+    grid-template-columns: 1fr;
+  }
+}

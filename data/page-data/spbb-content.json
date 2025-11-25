@@ -1,0 +1,10 @@
+{
+  "site-title": "Student Proof Bigband",
+  "im1": "assets/images/weihao-horizontal.png",
+  "im2": "assets/images/weihao-vertical.png",
+  "im3": "assets/images/weihao-horizontal.png",
+  "im4": "assets/images/weihao-vertical.png",
+  "im5": "assets/images/weihao-horizontal.png",
+  "video1": "<iframe src='https://www.youtube.com/embed/UMCsunG2w_U' title='YouTube video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+  "video2": "<iframe src='https://www.youtube.com/embed/RoyW7ajKB4E' title='YouTube video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+}

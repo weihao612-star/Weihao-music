@@ -1,0 +1,44 @@
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 5px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  height: 80vh;
+  background-color: var(--secondary);
+}
+
+.media {
+  flex: 0 0 auto; 
+  height: 100%; 
+  width: auto;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.media img {
+  height: 100%;        /* fill container height */
+  width: auto;         /* keep aspect ratio */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.video {
+  flex: 0 0 auto; 
+  height: 100%; 
+  width: auto;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  pointer-events: none;
+}
+
+.video iframe {
+  aspect-ratio: 16/9;
+  height: 100%;
+  width: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  pointer-events: auto;
+}

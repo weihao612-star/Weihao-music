@@ -1,0 +1,20 @@
+#main {
+  max-width: 1000px;        /* optional, centers content */
+  margin: 2rem auto;         /* center horizontally with spacing */
+  padding-top: 2rem;
+  text-align: center;        /* centers the text */
+}
+
+#horizontal {
+  width: 100%;               /* make it span container width */
+  max-width: 800px;          /* optional max width */
+  height: auto;              /* keep aspect ratio */
+  border-radius: 8px;        /* optional rounded corners */
+  margin-bottom: 1rem;     /* spacing between image and text */
+}
+
+#about-section {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--text);
+}

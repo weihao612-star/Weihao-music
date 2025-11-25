@@ -1,0 +1,40 @@
+#main {
+  display: flex;
+  align-items: flex-start;       /* top-align image and text */
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;         
+  max-width: 1000px;
+  margin: 2rem auto; 
+  flex-wrap: wrap;               /* allow stacking on small screens */
+}
+
+#main img {
+  width: 50vw;                   /* fill container width */
+  max-width: 500px;              /* constrain maximum width */
+  height: auto;                  /* maintain aspect ratio */
+  border-radius: 8px;
+  flex-shrink: 0;                /* prevent image from shrinking too small */
+}
+
+#main p {
+  flex: 1;
+  min-width: 200px;              /* ensure text doesn’t get too narrow */
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  #main {
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  #main img {
+    max-width: 80%;               /* smaller on mobile */
+  }
+
+  #main p {
+    text-align: center;           /* center text under image */
+  }
+}

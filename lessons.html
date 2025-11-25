@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="data/font.css">
+    <link rel="stylesheet" href="data/colors.css">
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <title>WeiHao Music</title>
+  </head>
+  <body>
+
+  <div id="top-container">
+    <header id="site-title"></header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="contact-container">
+    <h1 id="header"></h1>
+    <!-- use this in the future: https://www.reddit.com/r/webdev/comments/v4s2w5/created_a_free_formspree_alternative_solution_to/ -->
+
+    <form id="contact-form" action="https://formspree.io/f/xovzdkkj" method="POST">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="hidden" name="_subject" value="New lesson from website">
+
+        <button type="submit">Send</button>
+    </form>
+    <div id="form-status"></div>
+
+  </div>
+
+
+  <script src="assets/js/content.js"></script>
+  </body>
+</html>
