@@ -1,40 +1,45 @@
 #main {
-  display: flex;
-  align-items: flex-start;       /* top-align image and text */
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;         
-  max-width: 1000px;
-  margin: 2rem auto; 
-  flex-wrap: wrap;               /* allow stacking on small screens */
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
 }
 
-#main img {
-  width: 50vw;                   /* fill container width */
-  max-width: 500px;              /* constrain maximum width */
-  height: auto;                  /* maintain aspect ratio */
+.image-wrapper {
+  position: relative; /* needed for absolute text */
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;       /* full width image */
+  height: auto;
+  display: block;
   border-radius: 8px;
-  flex-shrink: 0;                /* prevent image from shrinking too small */
 }
 
-#main p {
-  flex: 1;
-  min-width: 200px;              /* ensure text doesn’t get too narrow */
-  font-size: 1.2rem;
+/* Text over the right side of the image */
+.image-wrapper p {
+  position: absolute;        /* stack on top of image */
+  top: 0px; 
+  right: 20px;               /* distance from right edge */
+  /* transform: translateY(-50%); */
+  background: rgba(255, 255, 255, 0.7); 
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-width: 40%;            /* limits width of text box */
+  font-size: 1.1rem;
   line-height: 1.5;
+  z-index: 10;               /* ensures it stays on top */
 }
 
+/* Mobile layout: text below image */
 @media (max-width: 700px) {
-  #main {
-    /* flex-direction: column; */
-    align-items: center;
-  }
-
-  #main img {
-    max-width: 80%;               /* smaller on mobile */
-  }
-
-  #main p {
-    text-align: center;           /* center text under image */
+  .image-wrapper p {
+    position: static;       /* remove absolute positioning */
+    transform: none;
+    max-width: 100%;
+    background: none;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
   }
 }
