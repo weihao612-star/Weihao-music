@@ -1,4 +1,7 @@
-const page = window.location.pathname.split("/").pop().replace(".html", "");
+// const page = window.location.pathname.split("/").pop().replace(".html", "");
+let page = window.location.pathname.split("/").pop().replace(".html", "");
+if (page === "") page = "index";
+
 const contentFile = `data/page-data/${page}-content.json`;
 
 async function loadContent() {
