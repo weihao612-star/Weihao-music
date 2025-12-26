@@ -1,12 +1,30 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#main {
+  flex: 1;
+}
+
 body {
   margin: 0;
-  /* font-family: Arial, sans-serif; */
   color: var(--text);
   background-color: var(--secondary);
 }
 
 #top-container {
-  background-color: var(--primary);
+  background: linear-gradient(
+    to bottom,
+    var(--primary) 0%,
+    var(--secondary) 100%
+  );
 }
 
 header {
@@ -37,10 +55,37 @@ nav a {
   font-weight: bold;
   padding: 1rem 0;
   display: block;
-  transition: color 0.3s, transform 0.2s ease; /* add transform transition */
+  transition: color 0.3s, transform 0.2s ease;
 }
 
 nav a:hover {
+  color: var(--accent);
+  transform: scale(1.1); /* slightly enlarge on hover */
+}
+
+.bottom-container {
+  width: 100%;
+  padding: 1.5rem 0;
+  /* background: var(--primary); */
+  background: linear-gradient(
+    to bottom,
+    var(--secondary) 0%,
+    var(--primary) 100%
+  );
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.bottom-container a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 2rem;
+  transition: color 0.3s, transform 0.2s ease; /* add transform transition */
+}
+
+.bottom-container a:hover {
   color: var(--accent);
   transform: scale(1.1); /* slightly enlarge on hover */
 }

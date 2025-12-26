@@ -5,12 +5,19 @@
    https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap
    ============================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/* body */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monsieur+La+Doulaise&display=swap');
 
-/* ============================
-   Global Font Application
-   ============================ */
+/* header */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-html, body {
-  font-family: "Oswald", sans-serif;
+
+/* Header font */
+.top-container, .bottom-container{
+   font-family: "Playfair Display", serif;
+}
+
+/* Text font */
+p, h1, button, textarea, input, label {
+  font-family: "Lato", sans-serif;
 }

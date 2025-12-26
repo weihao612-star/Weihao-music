@@ -1,45 +1,47 @@
 #main {
+  flex: 1;
+  display: flex;;
   width: 100%;
-  max-width: 900px;
-  margin: 2rem auto;
+  margin-top: 1rem;
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
 }
 
 .image-wrapper {
-  position: relative; /* needed for absolute text */
+  position: relative;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .image-wrapper img {
-  width: 100%;       /* full width image */
+  /* margin-left: 2vw;
+  margin-right: 2vw; */
+  width: 50%;
   height: auto;
   display: block;
-  border-radius: 8px;
+  /* translate: 25vw 8vh; */
 }
 
-/* Text over the right side of the image */
 .image-wrapper p {
-  position: absolute;        /* stack on top of image */
-  top: 0px; 
-  right: 20px;               /* distance from right edge */
-  /* transform: translateY(-50%); */
-  background: rgba(255, 255, 255, 0.7); 
+  position: absolute;
+  top: 0; 
+  right: 6vw;
   padding: 1rem 1.5rem;
-  border-radius: 8px;
-  max-width: 40%;            /* limits width of text box */
-  font-size: 1.1rem;
+  border-radius: 5px;
+  max-width: 30%; 
+  font-size: 1.5rem;
   line-height: 1.5;
-  z-index: 10;               /* ensures it stays on top */
+  color: var(--text);
 }
+
 
 /* Mobile layout: text below image */
-@media (max-width: 700px) {
-  .image-wrapper p {
-    position: static;       /* remove absolute positioning */
-    transform: none;
-    max-width: 100%;
-    background: none;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+@media (max-width: 1000px) {
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* translate: 25vw 8vh; */
+}
 }

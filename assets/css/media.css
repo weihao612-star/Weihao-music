@@ -1,49 +1,52 @@
 #bands {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding-top: 2rem;
-  max-width: 1000px;
-  margin: 2rem auto;
+  width: 100vw;          /* full screen */
+  max-width: 100%;
+  margin: 0;
+  padding-top: 1rem;
 }
 
 .band-item {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  overflow: hidden;
   text-align: center;
   text-decoration: none;
   color: inherit;
-  gap: 8px;
 }
 
 .band-item img {
-  width: 100%;
-  aspect-ratio: 3 / 2; /* 600x400 ratio */
+  width: 100%;          /* not 50vw */
+  aspect-ratio: 3 / 2;
   object-fit: cover;
-  border-radius: 10px;
   display: block;
-  transition: transform 0.2s ease;
+  transition: filter 0.3s ease;
 }
 
-.band-item img:hover {
-  transform: scale(1.03);
-}
-
-/* Caption styling */
 .band-item span {
-  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  opacity: 0;
+  color: var(--text);
+  font-size: 1.6rem;
   font-weight: 600;
-  display: block;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  #bands {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.band-item:hover img {
+  filter: brightness(0.4);
 }
 
-@media (max-width: 500px) {
+.band-item:hover span {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
   #bands {
     grid-template-columns: 1fr;
   }

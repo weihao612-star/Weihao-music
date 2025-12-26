@@ -1,12 +1,20 @@
+.intro {
+  flex: 0 0 35%;
+  padding: 2rem;
+}
+
+#intro-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
 .gallery {
   display: flex;
+  height: 40vh;
   overflow-x: auto;
-  gap: 5px;
-  padding: 10px;
   scroll-behavior: smooth;
-  height: 80vh;
-  background-color: var(--secondary);
 }
+
 
 .media {
   flex: 0 0 auto; 
@@ -18,9 +26,9 @@
 }
 
 .media img {
-  height: 100%;        /* fill container height */
-  width: auto;         /* keep aspect ratio */
-  border-radius: 8px;
+  height: 100%;
+  width: auto;
+  /* border-radius: 8px; */
   object-fit: cover;
 }
 
@@ -38,7 +46,7 @@
   aspect-ratio: 16/9;
   height: 100%;
   width: auto;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   object-fit: cover;
   pointer-events: auto;
 }
