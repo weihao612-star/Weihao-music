@@ -52,4 +52,12 @@
   #services {
     grid-template-columns: 1fr;
   }
+
+  .service img {
+    filter: brightness(0.4);
+  }
+
+  .service span {
+    opacity: 1;
+  }
 }

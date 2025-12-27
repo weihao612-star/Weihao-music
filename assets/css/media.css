@@ -50,4 +50,11 @@
   #bands {
     grid-template-columns: 1fr;
   }
+  .band-item img {
+    filter: brightness(0.4);
+  }
+
+  .band-item span {
+    opacity: 1;
+  }
 }

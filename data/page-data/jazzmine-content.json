@@ -1,11 +1,11 @@
 {
   "site-title": "Jazzmine",
   "intro-text": "Jazzmine is a contemporary jazz band based in Singapore, known for their innovative compositions and dynamic performances that blend traditional jazz elements with modern influences.",
-  "im1": "assets/images/weihao-horizontal.png",
-  "im2": "assets/images/weihao-vertical.png",
-  "im3": "assets/images/weihao-horizontal.png",
-  "im4": "assets/images/weihao-vertical.png",
-  "im5": "assets/images/weihao-horizontal.png",
+  "im1": "assets/images/weihao-horizontal.webp",
+  "im2": "assets/images/weihao-vertical.webp",
+  "im3": "assets/images/weihao-horizontal.webp",
+  "im4": "assets/images/weihao-vertical.webp",
+  "im5": "assets/images/weihao-horizontal.webp",
   "video1": "<iframe src='https://www.youtube.com/embed/UMCsunG2w_U' title='YouTube video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
   "video2": "<iframe src='https://www.youtube.com/embed/-478W9ZDoQ4' title='Verada-M4H' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
 }

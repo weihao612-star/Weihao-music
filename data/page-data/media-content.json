@@ -1,15 +1,15 @@
 {
-  "site-title": "WeihaoSun.com",
+  "site-title": "Weihao Music",
 
   "jazzmine": "Jazzmine",
-  "jazzmine-cover": "assets/images/clap_Jazzmine_Gin&Jazz.jpg",
+  "jazzmine-cover": "assets/images/clap_Jazzmine_Gin&Jazz.webp",
 
   "sunmartingolzio": "Sun Martin Golzio",
-  "sunmartingolzio-cover": "assets/images/Whiskey&Jazz.jpeg",
+  "sunmartingolzio-cover": "assets/images/Whiskey&Jazz.webp",
 
   "ejo": "Eindhoven Jazz Orchestra",
-  "ejo-cover": "assets/images/Jazzedup-EJO.jpg",
+  "ejo-cover": "assets/images/Jazzedup-EJO.webp",
 
   "spbb": "Studentproof Bigband",
-  "spbb-cover": "assets/images/Jazzedup-studentproofbigband.jpg"
+  "spbb-cover": "assets/images/Jazzedup-studentproofbigband.webp"
 }
